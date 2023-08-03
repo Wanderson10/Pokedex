@@ -112,7 +112,8 @@ export const EvolutionList = styled.ul`
   list-style: none;
   background-color: black;
   border: 4px solid #ffffff;
-  width:60%;
+  width:40%;
+  min-width:240px;
   padding:20px 20px;
   overflow-x: auto; 
   background-image: linear-gradient(
@@ -126,10 +127,9 @@ export const EvolutionList = styled.ul`
 export const EvolutionItem = styled.li`
   /* Estilos gerais */
   font-size: 18px;
-  margin-bottom: 10px;
-  margin-left: 8px;
-  margin-right: 8px;
-  width:80%;
+ 
+
+  
   img {
     &:hover {
       animation: ${expandAndShrink} 2s ease-in-out infinite;
@@ -144,6 +144,17 @@ export const EvolutionItem = styled.li`
       cursor: pointer;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
       border: 1px solid white;
+    }
+  }
+
+  @media (max-width: 400px) {
+    margin-left:10px;
+
+    h3{
+      font-size:16px;
+    }
+    p{
+      font-size:15px;
     }
   }
 `;

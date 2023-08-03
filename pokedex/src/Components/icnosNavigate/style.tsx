@@ -40,7 +40,10 @@ export const Navigate = styled.nav`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 
+
+ 
   .elementIcons {
+    
     width: 40px;
     margin-left:6px;
   animation: ${fadeInAnimation} 0.5s ease-in-out, ${growAnimation} 1s ;
@@ -49,12 +52,27 @@ export const Navigate = styled.nav`
     cursor:pointer;
     animation: ${bounceAnimation} 0.5s ease-in-out, ${growAnimation} 1s infinite;
   }
-   
+  @media (max-width: 300px) {
+    
+     
+      
+    
+
+  }
   }
   
 
   div {
     margin-top: 15px;
+
+    @media (max-width: 500px) {
+     width:100%;
+    
+
+  }
+
+ 
+   
   }
   
 
@@ -76,6 +94,12 @@ export const Navigate = styled.nav`
     .elementIcons {
       width: 40px;
     }
+  }
+
+  @media (max-width: 500px) {
+   padding:100px;
+    
+
   }
 `;
 
@@ -112,10 +136,7 @@ export const RetroButton = styled.button`
   }
 
 
-  @media (min-width: 768px) {
-    font-size: 12px;
-    padding: 2px 8px;
-    max-width: 150px;
-  }
+ 
+  
 `;
 

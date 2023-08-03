@@ -101,7 +101,6 @@ function PageDetailedPokemon() {
   return (
     <>
     <HeaderComponent/>
-    <NavigateComponent/>
     <Main>
       <RetroButton onClick={()=>GoMain()}>Back</RetroButton>
       <PokemonDetails>
