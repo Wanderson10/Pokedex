@@ -58,7 +58,7 @@ function NavigateComponent() {
         <img className="elementIcons" onClick={() => filterByElement('water')} src={water} alt="water" />
         <img className="elementIcons" onClick={() => filterByElement('normal')} src={normal} alt="normal" />
         <img className="elementIcons" onClick={() => filterByElement('ice')} src={ice} alt="ice" />
-        <img className="elementIcons" onClick={() => filterByElement('electric')} src={eletric} alt="electric" />
+       
         {showMore && (
           <>
             <img className="elementIcons" onClick={() => filterByElement('poison')} src={poison} alt="poison" />
