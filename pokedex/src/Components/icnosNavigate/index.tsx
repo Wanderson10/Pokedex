@@ -57,7 +57,8 @@ function NavigateComponent() {
         <img className="elementIcons" onClick={() => filterByElement('fire')} src={fire} alt="fire" />
         <img className="elementIcons" onClick={() => filterByElement('water')} src={water} alt="water" />
         <img className="elementIcons" onClick={() => filterByElement('normal')} src={normal} alt="normal" />
-        
+        <img className="elementIcons" onClick={() => filterByElement('ice')} src={ice} alt="ice" />
+        <img className="elementIcons" onClick={() => filterByElement('electric')} src={eletric} alt="electric" />
         {showMore && (
           <>
             <img className="elementIcons" onClick={() => filterByElement('poison')} src={poison} alt="poison" />
@@ -65,8 +66,6 @@ function NavigateComponent() {
             <img className="elementIcons" onClick={() => filterByElement('bug')} src={bug} alt="bug" />
             <img className="elementIcons" onClick={() => filterByElement('steel')} src={metal} alt="steel" />
             <img className="elementIcons" onClick={() => filterByElement('dark')} src={dark} alt="dark" />
-            <img className="elementIcons" onClick={() => filterByElement('electric')} src={eletric} alt="electric" />
-            <img className="elementIcons" onClick={() => filterByElement('ice')} src={ice} alt="ice" />
             <img className="elementIcons" onClick={() => filterByElement('rock')} src={rock} alt="rock" />
             <img className="elementIcons" onClick={() => filterByElement('ground')} src={ground} alt="ground" />
             <img className="elementIcons" onClick={() => filterByElement('ghost')} src={ghost} alt="ghost" />
