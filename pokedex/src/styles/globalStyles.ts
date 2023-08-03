@@ -29,9 +29,14 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	
+
+  
+   
+  
 	background-color:#EFEFEF;
 	line-height: 1;
-    font-family:'Inter', sans-serif;
+    font-family: 'Orbitron', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -48,8 +53,5 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-@font-face {
-  font-family: "abel";
-  src: url(src\pages\pageProdutoClicado\fontes\OpenSans-Italic-VariableFont_wdth,wght.ttf);
-}
+
 `

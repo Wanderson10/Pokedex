@@ -44,7 +44,7 @@ export const CardList = styled.ul`
  
   animation: ${fadeInAnimation} 0.5s ease-in-out;
 
-  /* Estilos para dispositivos menores (até 767px) */
+
   @media (max-width: 767px) {
     padding: 10px;
     gap: 10px;
@@ -62,7 +62,7 @@ position: relative;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
 
-  /* Estilos para dispositivos menores (até 767px) */
+
   @media (max-width: 767px) {
     width: 45%;
     padding: 10px;
@@ -73,7 +73,7 @@ position: relative;
     color: #fff;
     text-align: center;
     text-transform: capitalize;
-    font-family: "Press Start 2P", cursive;
+
     letter-spacing: 1px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
     animation: ${fadeInAnimation} 0.5s ease-in-out;
@@ -109,7 +109,7 @@ position: relative;
     text-transform: capitalize;
     animation: ${fadeInAnimation} 0.5s ease-in-out;
 
-    /* Estilos para dispositivos menores (até 767px) */
+  
     @media (max-width: 767px) {
       font-size: 16px;
     }
@@ -117,8 +117,8 @@ position: relative;
     img {
       display: block;
     width: 50px;;
-    height: 50px; // Definindo altura fixa para a imagem
-    object-fit: cover; // Faz a imagem se ajustar ao tamanho definido mantendo a proporção
+    height: 50px; 
+    object-fit: cover; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
    

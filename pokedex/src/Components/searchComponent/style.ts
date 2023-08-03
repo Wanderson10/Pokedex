@@ -41,9 +41,9 @@ export const RetroButton = styled.button`
   background-color: red;
   color: #fff;
   font-size: 16px;
-  font-family: "Press Start 2P", cursive;
   border-radius: 5px;
   outline: none;
+  font-family: 'Orbitron', sans-serif;
   cursor: pointer;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
   transition: box-shadow 0.3s ease;

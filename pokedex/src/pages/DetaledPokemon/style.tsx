@@ -75,6 +75,8 @@ export const PokemonTitle = styled.h1`
   text-align: center;
   text-transform: capitalize;
   padding-bottom: 15px;
+  font-family: 'Orbitron', sans-serif;
+
 `;
 
 export const PokemonImage = styled.img`
@@ -98,6 +100,8 @@ export const PokemonImage = styled.img`
 
 export const PokemonAttribute = styled.h2`
   /* Estilos gerais */
+  font-family: 'Orbitron', sans-serif;
+
   font-size: 20px;
   text-align: center;
   margin-bottom:10px;
@@ -125,9 +129,11 @@ export const EvolutionList = styled.ul`
 `;
 
 export const EvolutionItem = styled.li`
-  /* Estilos gerais */
+  
   font-size: 18px;
- 
+  margin-right:5px;
+  font-family: 'Orbitron', sans-serif;
+
 
   
   img {
@@ -178,7 +184,7 @@ export const RetroButton = styled.button`
   font-size: 12px;
   cursor: pointer;
   border-radius: 5px;
-  font-family: "Press Start 2P", cursive;
+  font-family: 'Orbitron', sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);

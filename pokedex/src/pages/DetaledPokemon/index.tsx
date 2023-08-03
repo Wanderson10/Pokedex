@@ -17,7 +17,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid } from "rec
 import { useNavigate } from "react-router-dom";
 import { useMediaQuery } from 'react-responsive';
 import HeaderComponent from '../../Components/header';
-import NavigateComponent from '../../Components/icnosNavigate';
+
 
    
 
@@ -27,15 +27,25 @@ function PageDetailedPokemon() {
   const { detailedPokemon } = useSimulationContext();
   const { pokemons,setDetaliedPokemon } = useSimulationContext()
   const navigate = useNavigate()
+
+  function savePokemonDataToLocalStorage(pokemonData: IPokemon[],detalied:IPokemon) {
+    const serializedData = JSON.stringify(pokemonData);
+    const serializedDetalied = JSON.stringify(detalied);
+    localStorage.setItem('pokemonData', serializedData);
+    localStorage.setItem('detalied', serializedDetalied);
+  }
+
   function GoToDetailsPokemons (poke :IPokemon){
     setDetaliedPokemon(poke)
-    console.log(poke)
+    
     navigate('/Detailed',{ replace:true })
+    
+  
   } 
  
   function GoMain (){
 
-   
+    
     navigate('/Dashboard',{ replace:true })
   } 
 
@@ -70,6 +80,8 @@ function PageDetailedPokemon() {
         })
       );
       setPokemonData(pokemonEvolutionsResponse);
+      savePokemonDataToLocalStorage(pokemonEvolutionsResponse,detailedPokemon)
+      
     } catch (error) {
       console.error("Error fetching evolutions:", error);
     }
@@ -77,6 +89,14 @@ function PageDetailedPokemon() {
 
    useEffect(() => {
     fetchEvolutions();
+    const storedDetailedPokemon = localStorage.getItem('detalied');
+    const EvolutionsPokemon = localStorage.getItem('pokemonData');
+  if (storedDetailedPokemon) {
+    setDetaliedPokemon(JSON.parse(storedDetailedPokemon));
+  }
+  if (EvolutionsPokemon) {
+    setPokemonData(JSON.parse(EvolutionsPokemon));
+  }
    }, []);
    console.log(pokemonData)
   const data = [

@@ -113,7 +113,7 @@ export const RetroButton = styled.button`
   font-size: 12px;
   cursor: pointer;
   border-radius: 5px;
-  font-family: "Press Start 2P", cursive;
+  font-family: 'Orbitron', sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);

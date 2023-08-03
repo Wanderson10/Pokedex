@@ -56,7 +56,7 @@ interface IPokemonStat {
 export interface IPokedexContexct {
     pokemons: IPokemon[]
     detailedPokemon: IPokemon | null;
-    setDetaliedPokemon: React.Dispatch<React.SetStateAction<IPokemon | null>>;
+    setDetaliedPokemon: any,
     filteredPokemons:IPokemon[]
     setFilteredPokemons:React.Dispatch<React.SetStateAction<IPokemon[]>>;
     input:string,

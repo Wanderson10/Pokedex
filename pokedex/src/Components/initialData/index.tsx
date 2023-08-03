@@ -34,7 +34,6 @@ function MainData() {
   return (
     <Main>
       <div>
-        <h1>Popular pokemons</h1>
         <CardList>
           {filteredPokemons.map((pokemon, index) => (
             <Card onClick={() => GoToDetailsPokemons(pokemon)} key={index}>
