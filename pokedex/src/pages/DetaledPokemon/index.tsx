@@ -88,7 +88,7 @@ function PageDetailedPokemon() {
   };
 
    useEffect(() => {
-    fetchEvolutions();
+
     const storedDetailedPokemon = localStorage.getItem('detalied');
     const EvolutionsPokemon = localStorage.getItem('pokemonData');
   if (storedDetailedPokemon) {
@@ -97,6 +97,8 @@ function PageDetailedPokemon() {
   if (EvolutionsPokemon) {
     setPokemonData(JSON.parse(EvolutionsPokemon));
   }
+
+  fetchEvolutions();
    }, []);
    console.log(pokemonData)
   const data = [

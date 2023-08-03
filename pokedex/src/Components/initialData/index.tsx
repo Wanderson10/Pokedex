@@ -28,6 +28,8 @@ function MainData() {
 
   function GoToDetailsPokemons(poke: IPokemon) {
     setDetaliedPokemon(poke);
+    const serializedDetalied = JSON.stringify(poke);
+    localStorage.setItem('detalied', serializedDetalied);
     navigate("/Detailed", { replace: true });
   }
 
