@@ -18,19 +18,11 @@ export const Header = styled.header`
   }
 `;
 
-const retroLogoFilter = `
-  contrast(1.5) brightness(1.2) sepia(0.5) saturate(2);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  padding: 5px;
-  margin: -5px;
-  background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) inset;
-`;
 
 export const LogoImage = styled.img`
   width: 250px;
   height: 50px;
-  filter: ${retroLogoFilter};
+
 
   @media (max-width: 767px) {
     width: 150px;
