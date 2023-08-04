@@ -9,7 +9,7 @@ const expandAndShrink = keyframes`
   }
 `;
 
-// Estilos gerais
+
 export const Main = styled.main`
   background-color: #000;
   padding: 20px;
@@ -21,7 +21,7 @@ export const Main = styled.main`
 `;
 
 export const DivGrafics = styled.div`
-  /* Estilos para dispositivos móveis (até 767px) */
+
   background-color: black;
   border: 5px solid white;
   display: flex;
@@ -38,7 +38,7 @@ export const DivGrafics = styled.div`
   linear-gradient(90deg, rgb(34, 34, 34) 1px, transparent 1px);
   background-size: 5px 5px;
 
-  /* Estilos para dispositivos maiores (a partir de 768px) */
+
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
@@ -48,7 +48,7 @@ export const DivGrafics = styled.div`
 `;
 
 export const PokemonDetails = styled.div`
-  /* Estilos gerais */
+
   background-color: #333;
   padding: 20px;
   margin-top: 20px;
@@ -70,7 +70,7 @@ export const PokemonDetails = styled.div`
 `;
 
 export const PokemonTitle = styled.h1`
-  /* Estilos gerais */
+
   font-size: 24px;
   text-align: center;
   text-transform: capitalize;
@@ -80,7 +80,7 @@ export const PokemonTitle = styled.h1`
 `;
 
 export const PokemonImage = styled.img`
-  /* Estilos gerais */
+ 
   display: block;
   width: 100%;
   max-width: 300px;
@@ -99,7 +99,7 @@ export const PokemonImage = styled.img`
 `;
 
 export const PokemonAttribute = styled.h2`
-  /* Estilos gerais */
+
   font-family: 'Orbitron', sans-serif;
 
   font-size: 20px;
@@ -108,7 +108,7 @@ export const PokemonAttribute = styled.h2`
 `;
 
 export const EvolutionList = styled.ul`
-  /* Estilos gerais */
+ 
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -142,7 +142,7 @@ export const EvolutionItem = styled.li`
       cursor: pointer;
     }
   }
-  /* Estilos para dispositivos maiores (a partir de 768px) */
+
   @media (min-width: 768px) {
     &:hover {
       transform: scale(1.1);
@@ -166,7 +166,7 @@ export const EvolutionItem = styled.li`
 `;
 
 export const EvolutionLink = styled.a`
-  /* Estilos gerais */
+ 
   color: #fff;
   text-decoration: none;
   &:hover {

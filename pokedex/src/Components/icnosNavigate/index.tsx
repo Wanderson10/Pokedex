@@ -1,6 +1,6 @@
 
 import { useState } from "react"
-import { Navigate,RetroButton } from "./style"
+import { Navigate, RetroButton } from "./style"
 import { useSimulationContext } from "../../Context/contexct"
 import grass from "../header/img/iconsElements/grass_type_symbol_galar_by_jormxdos_dffvl0s-fullview.png"
 import fire from "../header/img/iconsElements/fire_type_symbol_galar_by_jormxdos_dffvl1m-pre.png"
@@ -26,11 +26,11 @@ import back from "../header/img/iconsElements/arrow_10124537.png"
 
 function NavigateComponent() {
   const [showMore, setShowMore] = useState(false);
-  const {elementPokemon, setFilteredPokemons } = useSimulationContext();
+  const { elementPokemon, setFilteredPokemons } = useSimulationContext();
 
   function filterByElement(e: string) {
     const result = [];
- 
+
     for (let i = 0; i < elementPokemon.length; i++) {
       const pokemon = elementPokemon[i];
       const types = pokemon.types;
@@ -58,7 +58,7 @@ function NavigateComponent() {
         <img className="elementIcons" onClick={() => filterByElement('water')} src={water} alt="water" />
         <img className="elementIcons" onClick={() => filterByElement('normal')} src={normal} alt="normal" />
         <img className="elementIcons" onClick={() => filterByElement('ice')} src={ice} alt="ice" />
-    
+
         {showMore && (
           <>
             <img className="elementIcons" onClick={() => filterByElement('electric')} src={eletric} alt="electric" />

@@ -32,13 +32,12 @@ export const LogoImage = styled.img`
   height: 50px;
   filter: ${retroLogoFilter};
 
-  /* Estilos para dispositivos menores (até 767px) */
   @media (max-width: 767px) {
     width: 150px;
     height: 30px;
   }
 
-  /* Estilos para dispositivos maiores (a partir de 768px) */
+ 
   @media (min-width: 768px) {
     width: 250px;
     height: 50px;
